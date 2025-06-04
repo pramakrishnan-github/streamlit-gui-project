@@ -12,8 +12,8 @@ username = st.text_input("Username")
 password = st.text_input("Password", type="password")
 
 # Dropdown options (example lists, replace these with actual values)
-portfolio_options = ["renpro_portfolio_pl"]
-cluster_options = ["renpro_pl_wind", "renpro_pl_solar"]
+portfolio_options = ["example_portfolio_country"]
+cluster_options = ["example_country_wind", "example_country_solar"]
 
 # Dropdown selection widgets
 portfolio_slug = st.selectbox("Portfolio Slug", portfolio_options)
