@@ -5,7 +5,7 @@ import altair as alt
 from datetime import datetime
 from requests.auth import HTTPBasicAuth
 
-st.title("Cluster Actuals Visualization")
+st.title("Posted Actuals Visualized")
 
 # Input fields for authentication
 username = st.text_input("Username")
