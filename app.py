@@ -12,8 +12,8 @@ username = st.text_input("Username")
 password = st.text_input("Password", type="password")
 
 # Dropdown options (example lists, replace these with actual values)
-portfolio_options = ["example_portfolio_country", "renpro_portfolio_pl"]
-cluster_options = ["example_country_wind", "example_country_solar", "renpro_pl_wind", "renpro_pl_solar"]
+portfolio_options = ["example_portfolio_country"]
+cluster_options = ["example_country_wind", "example_country_solar"]
 
 # Dropdown selection widgets
 portfolio_slug = st.selectbox("Portfolio Slug", portfolio_options)
@@ -34,7 +34,7 @@ def fetch_data(url, auth):
 # Proceed only if username and password are provided
 if username and password:
     auth = HTTPBasicAuth(username, password)
-    BASE_URL = f"https://api.dexterenergyservices.com/v1/portfolio/{portfolio_slug}/cluster/{cluster_slug}/actuals/latest/"
+    BASE_URL = f" "
     data = fetch_data(BASE_URL, auth)
 
     if data:
