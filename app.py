@@ -11,14 +11,13 @@ st.title("Posted Actuals Visualized")
 username = st.text_input("Username")
 password = st.text_input("Password", type="password")
 
-# Dropdown/combobox options (example lists, replace with actual values)
-portfolio_options = ["portfolio_1", "portfolio_2", "portfolio_3"]
-cluster_options = ["cluster_1", "cluster_2", "cluster_3"]
+# Dropdown options (example lists, replace these with actual values)
+portfolio_options = ["example_portfolio_country"]
+cluster_options = ["example_country_wind", "example_country_solar"]
 
-# Combobox allows typing or selecting existing options
-portfolio_slug = st.combobox("Portfolio Slug", portfolio_options, help="Type to search or enter a new portfolio slug.")
-cluster_slug = st.combobox("Cluster Slug", cluster_options, help="Type to search or enter a new cluster slug.")
-
+# Dropdown selection widgets
+portfolio_slug = st.selectbox("Portfolio Slug", portfolio_options)
+cluster_slug = st.selectbox("Cluster Slug", cluster_options)
 
 # Date selection widget
 date_selected = st.date_input("Select Created Date", datetime.today())
